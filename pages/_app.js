@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import 'semantic-ui-css/semantic.min.css'
 import { Header, Image } from 'semantic-ui-react'
