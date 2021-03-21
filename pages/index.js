@@ -1,65 +1,60 @@
+import React from 'react'
+import { Card, Image, Divider } from 'semantic-ui-react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
+import 'semantic-ui-css/semantic.min.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <>
+      <div className="ui container">
+        <Head>
+          <title>Home</title>
+        </Head>
+        <h1>Welcome</h1>
+        <h4>
+          My name is Guan Yu Chen, you can call me Kevin. I am a student at University of Toronto Scarborough specializing in Machine Learning and Data Mining. I
+          love learning new machine learning and data mining algorithms and applying them to make new models for datasets. I also have a interest in learning big
+          data and useful languages/packages such as Scala, TensorFlow, Spark and Hadoop. Most of my work is available on GitHub and a brief description is
+          available on the projects page. Also my resume is available here.
+      </h4>
+      </div>
+      <Divider hidden />
+      <div className="ui container">
+        <h1>Places I've Been</h1>
+        <Card.Group itemsPerRow={4}>
+          <Card>
+            <Image src="/toronto.jfif" />
+            <Card.Content>
+              <Card.Header>Toronto</Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="/losangeles.jpg" />
+            <Card.Content>
+              <Card.Header>Los Angeles</Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="/sanfrancisco.jpg" />
+            <Card.Content>
+              <Card.Header>San Francisco</Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="/beijing.jpg" />
+            <Card.Content>
+              <Card.Header>Beijing</Card.Header>
+            </Card.Content>
+          </Card>
+          <Card>
+            <Image src="/nanchang.jpg" />
+            <Card.Content>
+              <Card.Header>Nanchang</Card.Header>
+            </Card.Content>
+          </Card>
+        </Card.Group>
+      </div>
+    </>
   )
 }
