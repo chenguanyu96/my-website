@@ -9,11 +9,11 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
-      <div className="ui inverted vertical center aligned segment" style={router.pathname == "/" ? {minHeight: "300px"} : {minHeight: '0px'}}>
+      <div className="ui inverted vertical center aligned segment" style={router.pathname == "/" ? {minHeight: "330px"} : {minHeight: '0px'}}>
         <div className="ui inverted top fixed menu">
           <div className="item">
-            <Header as='h1' style={{ color: "white" }}>
-              <Image circular src='/Profile.jpg' /> Kevin Chen
+            <Header as='h1' style={{ color: "white", fontFamily: "California", fontWeight: "normal", fontSize: "3em"}}>
+              <Image circular src='/Profile.jpg' /> KEVIN CHEN
           </Header>
           </div>
           <Link href="/">
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           </div>
         </div>
         <div className="ui text container">
-          <h1 style={{marginTop: "1em", fontSize: "4em"}}>{router.pathname == "/" ? "hi there!" : router.pathname.slice(1,router.pathname.length)}</h1>
+          <h1 style={{marginTop: "1.5em", fontSize: "4em"}}>{router.pathname == "/" ? "hi there!" : router.pathname.slice(1,router.pathname.length)}</h1>
           <p style={router.pathname == "/" ? {fontWeight: 'normal'} : {display: 'none'}}>
             My name is Guan Yu Chen, you can call me Kevin. I am an University of Toronto Scarborough alumni, specializing in Machine Learning and Data Mining 
             during  my time there. Currently, working in Toronto, Ontario, Canada as a Programmer Analyst developing automation and artificial intelligence 
