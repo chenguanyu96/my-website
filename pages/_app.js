@@ -19,9 +19,6 @@ function MyApp({ Component, pageProps }) {
           <Link href="/">
             <a className={router.pathname == "/" ? "active item" : "item"}>Home</a>
           </Link>
-          <Link href="/projects">
-            <a className={router.pathname == "/projects" ? "active item" : "item"}>Projects</a>
-          </Link>
           <Link href="/resume">
             <a className={router.pathname == "/resume" ? "active item" : "item"}>Resume</a>
           </Link>
@@ -47,6 +44,14 @@ function MyApp({ Component, pageProps }) {
       </div>
       <div style={{ marginTop: "2em" }}>
         <Component {...pageProps} />
+      </div>
+      <div className="ui inverted vertical footer segment">
+        <div className="ui center aligned container">
+          <Image src="/logo.png" className="ui centered mini image" />
+          <div className="ui horizontal inverted small">
+            Copyright (c) 2021
+          </div>
+        </div>
       </div>
     </>
   )
