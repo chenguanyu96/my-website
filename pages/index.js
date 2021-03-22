@@ -58,7 +58,7 @@ export default function Home() {
           <Form>
             <Form.Group widths='equal'>
               <Form.Input fluid label='Your Name' placeholder='Your Name' name='name' value={name} onChange={handleNameChange}/>
-              <Form.Input fluid label='Email' placeholder='Email' name='email' value={email} onChange={handleEmailChange} />
+              <Form.Input fluid label='Your Email' placeholder='Your Email' name='email' value={email} onChange={handleEmailChange} />
             </Form.Group>
             <Form.TextArea label='Your Message' placeholder='Your Message' name='message' value={message} onChange={handleMessageChange} />
             <Message icon>

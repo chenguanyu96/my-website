@@ -22,6 +22,9 @@ function MyApp({ Component, pageProps }) {
           <Link href="/projects">
             <a className={router.pathname == "/projects" ? "active item" : "item"}>Projects</a>
           </Link>
+          <Link href="/resume">
+            <a className={router.pathname == "/resume" ? "active item" : "item"}>Resume</a>
+          </Link>
           <div className="right item">
             <a href="https://www.linkedin.com/in/kevinchengy/" target="_blank"><button className="ui linkedin button" style={{ marginRight: "1em" }}>
               <i className="linkedin icon"></i>
@@ -34,7 +37,7 @@ function MyApp({ Component, pageProps }) {
           </div>
         </div>
         <div className="ui text container">
-          <h1 style={{marginTop: "1em", fontSize: "4em"}}>{router.pathname == "/" ? "Hi there!" : router.pathname.slice(1,router.pathname.length)}</h1>
+          <h1 style={{marginTop: "1em", fontSize: "4em"}}>{router.pathname == "/" ? "hi there!" : router.pathname.slice(1,router.pathname.length)}</h1>
           <p style={router.pathname == "/" ? {fontWeight: 'normal'} : {display: 'none'}}>
             My name is Guan Yu Chen, you can call me Kevin. I am an University of Toronto Scarborough alumni, specializing in Machine Learning and Data Mining 
             during  my time there. Currently, working in Toronto, Ontario, Canada as a Programmer Analyst developing automation and artificial intelligence 
