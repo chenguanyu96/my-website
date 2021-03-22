@@ -3,39 +3,46 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import 'semantic-ui-css/semantic.min.css'
 import { Header, Image } from 'semantic-ui-react'
+import '../styles/master.css'
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   return (
     <>
-      <div className="ui inverted top fixed menu">
-        <div className="item">
-          <Header as='h1' style={{ color: "white" }}>
-            <Image circular src='/Profile.jpg' /> Kevin Chen
-        </Header>
+      <div className="ui inverted vertical center aligned segment" style={router.pathname == "/" ? {minHeight: "300px"} : {minHeight: '0px'}}>
+        <div className="ui inverted top fixed menu">
+          <div className="item">
+            <Header as='h1' style={{ color: "white" }}>
+              <Image circular src='/Profile.jpg' /> Kevin Chen
+          </Header>
+          </div>
+          <Link href="/">
+            <a className={router.pathname == "/" ? "active item" : "item"}>Home</a>
+          </Link>
+          <Link href="/projects">
+            <a className={router.pathname == "/projects" ? "active item" : "item"}>Projects</a>
+          </Link>
+          <div className="right item">
+            <a href="https://www.linkedin.com/in/kevinchengy/" target="_blank"><button className="ui linkedin button" style={{ marginRight: "1em" }}>
+              <i className="linkedin icon"></i>
+              LinkedIn
+            </button></a>
+            <a href="https://github.com/kevinchengy" target="_blank"><button className="ui button" style={{ marginRight: "1em" }}>
+              <i className="github icon"></i>
+              GitHub
+            </button></a>
+          </div>
         </div>
-        <Link href="/">
-          <a className={router.pathname == "/" ? "active item" : "item"}>Home</a>
-        </Link>
-        <Link href="/projects">
-          <a className={router.pathname == "/projects" ? "active item" : "item"}>Projects</a>
-        </Link>
-        <div className="right item">
-          <button className="ui linkedin button" style={{ marginRight: "1em" }}>
-            <i className="linkedin icon"></i>
-            LinkedIn
-          </button>
-          <button className="ui button" style={{ marginRight: "1em" }}>
-            <i className="github icon"></i>
-            GitHub
-          </button>
-          <button className="ui positive button">
-            <i className="envelope icon"></i>
-            Email
-          </button>
+        <div className="ui text container">
+          <h1 style={{marginTop: "1em", fontSize: "4em"}}>{router.pathname == "/" ? "Hi there!" : router.pathname.slice(1,router.pathname.length)}</h1>
+          <p style={router.pathname == "/" ? {fontWeight: 'normal'} : {display: 'none'}}>
+            My name is Guan Yu Chen, you can call me Kevin. I am an University of Toronto Scarborough alumni, specializing in Machine Learning and Data Mining 
+            during  my time there. Currently, working in Toronto, Ontario, Canada as a Programmer Analyst developing automation and artificial intelligence 
+            solutions.
+          </p>
         </div>
       </div>
-      <div style={{ marginTop: "7em" }}>
+      <div style={{ marginTop: "2em" }}>
         <Component {...pageProps} />
       </div>
     </>
