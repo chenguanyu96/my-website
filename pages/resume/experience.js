@@ -24,8 +24,8 @@ class Experience extends Component {
         return (
             <>
                 <Card interactive={false} elevation={Elevation.FOUR}>
-                    <h3>Programmer Analyst, Emerging Technologies <small>(Feb 2019 to Present)</small></h3>
-                    <small>Meridian Credit Union, Etobicoke, Ontario, Canada</small>
+                    <h3 style={{marginBottom: "0px"}}>Programmer Analyst, Emerging Technologies <small>(Feb 2019 to Present)</small></h3>
+                    <h4 style={{marginTop: "0px"}}>Meridian Credit Union, Etobicoke, ON, Canada</h4>
                     <p>
                         <ul>
                             <li>
