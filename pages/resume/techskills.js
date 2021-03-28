@@ -12,6 +12,10 @@ class TechSkills extends Component {
                     <Card raised image={"/javascript.png"} />
                     <Card raised image={"/C-Sharp.png"} />
                     <Card raised image={"/python.png"} />
+                    <Card raised image={"/R.png"} />
+                    <Card raised image={"/powershell.png"} />
+                    <Card raised image={"/terminal.png"} />
+                    <Card raised image={"/sql.png"} />
                 </Card.Group>
                 <h2>Applications/Platforms</h2>
                 <Card.Group itemsPerRow={6} style={{marginBottom: "2em"}}>
@@ -21,6 +25,7 @@ class TechSkills extends Component {
                     <Card raised image={"/powerbi.png"} />
                     <Card raised image={"/provenir.png"} />
                     <Card raised image={"/azure.png"} />
+                    <Card raised image={"/aws.png"} />
                     <Card raised image={"/muleSoft.png"} />
                 </Card.Group>
             </>

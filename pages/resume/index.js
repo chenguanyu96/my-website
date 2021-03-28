@@ -5,6 +5,7 @@ import Experience from './experience'
 import Education from './education'
 import Projects from './projects'
 import TechSkills from './techskills'
+import Events from './events'
 
 export default function Home() {
     const [activeItem, setActiveItem] = useState('experience')
@@ -18,6 +19,8 @@ export default function Home() {
             return <Projects />
         } else if (sectionName === "technical skills") {
             return <TechSkills />
+        } else if (sectionName === "events") {
+            return <Events />
         }
     }
 
@@ -35,6 +38,7 @@ export default function Home() {
                         <Menu.Item name='education' active={activeItem === 'education'} onClick={handleItemClick} />
                         <Menu.Item name='projects' active={activeItem === 'projects'} onClick={handleItemClick} />
                         <Menu.Item name='technical skills' active={activeItem === 'technical skills'} onClick={handleItemClick} />
+                        <Menu.Item name='events' active={activeItem === "events"} onClick={handleItemClick} />
                     </Menu><br/>
                 </Grid.Column>
                 <Grid.Column width={12}>
