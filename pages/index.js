@@ -18,7 +18,7 @@ export default function Home() {
       <div className="ui container">
         <Head>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-          <title>Home</title>
+          <title>Home | kevingc.com</title>
         </Head>
         <h1>Places I've Been</h1>
         <Card.Group itemsPerRow={4}>
@@ -53,11 +53,11 @@ export default function Home() {
             </Card.Content>
           </Card>
         </Card.Group>
-        <Segment style={{marginTop: '3em'}}>
+        <Segment style={{ marginTop: '3em' }}>
           <h1>Get In Touch!</h1>
           <Form>
             <Form.Group widths='equal'>
-              <Form.Input fluid label='Your Name' placeholder='Your Name' name='name' value={name} onChange={handleNameChange}/>
+              <Form.Input fluid label='Your Name' placeholder='Your Name' name='name' value={name} onChange={handleNameChange} />
               <Form.Input fluid label='Your Email' placeholder='Your Email' name='email' value={email} onChange={handleEmailChange} />
             </Form.Group>
             <Form.TextArea label='Your Message' placeholder='Your Message' name='message' value={message} onChange={handleMessageChange} />
@@ -65,9 +65,9 @@ export default function Home() {
               <Icon name='hand paper' />
               <p>This uses your default mail application and does not automatically send the email. Please make sure your mail application is configured.</p>
             </Message>
-            <Form.Button href={"mailto:guanyukevin.chen+kevingc@gmail.com?Subject=Kevingc.com Message&body=Name%3A%20"+ JSON.stringify(name) +"%0D%0AEmail%3A%20"+ JSON.stringify(email) +"%0D%0AMessage%3A%20"+ JSON.stringify(message)} className="ui button">Send</Form.Button>
+            <Form.Button href={"mailto:guanyukevin.chen+kevingc@gmail.com?Subject=Kevingc.com Message&body=Name%3A%20" + JSON.stringify(name) + "%0D%0AEmail%3A%20" + JSON.stringify(email) + "%0D%0AMessage%3A%20" + JSON.stringify(message)} className="ui button">Send</Form.Button>
           </Form>
-        </Segment><br/>
+        </Segment><br />
       </div>
     </>
   )

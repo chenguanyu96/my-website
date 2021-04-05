@@ -43,7 +43,7 @@ class Experience extends Component {
                             </li>
                         </ul>
                     </p>
-                    <Button text="Read More" className={Classes.BUTTON} onClick={this.handleDrawerOpen} />
+                    <Button intent="success" text="Read More" className={Classes.BUTTON} onClick={this.handleDrawerOpen} />
                     <Drawer icon="info-sign" position={Position.BOTTOM} size="70%" onClose={this.handleDrawerClose} title="Programmer Analyst, Emerging Technologies @ Meridian Credit Union" {...this.state}>
                         <div className={Classes.DRAWER_BODY}>
                             <div className={Classes.DIALOG_BODY}>

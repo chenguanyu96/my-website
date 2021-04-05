@@ -29,7 +29,7 @@ export default function Home() {
     return (
         <div className="ui container">
             <Head>
-                <title>Resume</title>
+                <title>Resume/{activeItem} | kevingc.com</title>
             </Head>
             <Grid>
                 <Grid.Column width={4}>
@@ -39,7 +39,7 @@ export default function Home() {
                         <Menu.Item name='projects' active={activeItem === 'projects'} onClick={handleItemClick} />
                         <Menu.Item name='technical skills' active={activeItem === 'technical skills'} onClick={handleItemClick} />
                         <Menu.Item name='events' active={activeItem === "events"} onClick={handleItemClick} />
-                    </Menu><br/>
+                    </Menu><br />
                 </Grid.Column>
                 <Grid.Column width={12}>
                     <div>

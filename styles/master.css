@@ -2,11 +2,41 @@
 @import "~@blueprintjs/core/lib/css/blueprint.css";
 @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
 
-body, html {
-    height: auto;
+body,
+html {
+  height: auto;
+  font-family: "TisaSansPro";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "TisaSansPro";
 }
 
 @font-face {
-    font-family: 'California';
-    src: local('California'), url(../fonts/California\ by\ Dirt2.ttf) format('truetype');
-  }
+  font-family: "California";
+  src: local("California"),
+    url(../fonts/California\ by\ Dirt2.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "TisaSansPro";
+  src: local("TisaSansPro"),
+    url(../fonts/TisaSansPro-Regular.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-Black.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-BlackItalic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-Bold.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-BoldItalic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-ExtraBold.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-ExtraBoldItalic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-ExtraLight.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-ExtraLightItalic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-Italic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-Light.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-LightItalic.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-Medium.ttf) format("truetype"),
+    url(../fonts/TisaSansPro-MediumItalic.ttf) format("truetype");
+}
